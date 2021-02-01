@@ -6,12 +6,12 @@ namespace ProgramacionGenericaRestricciones
     {
         static void Main(string[] args)
         {
-            AlamacenEmpleados<Director> empladoDirector = new AlamacenEmpleados<Director>(3);
-            empladoDirector.agregar(new Director(4500));
-            empladoDirector.agregar(new Director(1400));
-            empladoDirector.agregar(new Director(3400));
+            AlamacenEmpleados<Director> empleadoDirector = new AlamacenEmpleados<Director>(3);
+            empleadoDirector.agregar(new Director(4500));
+            empleadoDirector.agregar(new Director(1400));
+            empleadoDirector.agregar(new Director(3400));
 
-            Director miDirector = empladoDirector.getEmpleado(0);
+            Director miDirector = empleadoDirector.getEmpleado(0);
             Console.WriteLine(miDirector.getSalario());
 
         }
